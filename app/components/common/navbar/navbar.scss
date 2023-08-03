@@ -351,64 +351,6 @@
         }
       }
 
-      .search__options {
-        display: flex;
-        gap: 0rem;
-        position: absolute;
-        top: 65px;
-        left: -28rem;
-        right: 0;
-        width: 70vw;
-        height: 50px;
-        overflow: hidden;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        background-color: var(--white);
-        z-index: 3;
-        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-
-        input {
-          width: 100%;
-          font-size: 16px;
-          font-weight: 500;
-          height: inherit;
-          border: none;
-          outline: none;
-          padding: 0.5rem;
-          color: inherit;
-
-          &::placeholder {
-            font-size: 16px;
-            color: var(--darkBlack);
-          }
-
-          &:focus {
-            font-size: 16px;
-            color: inherit;
-            color: var(--darkBlack);
-          }
-        }
-
-        button {
-          font-size: 30px;
-          width: 60px;
-          height: inherit;
-        }
-      }
-
-      .search__options::before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 28.5rem;
-        top: -9px;
-        border-bottom: 10px solid var(--white);
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-      }
-
       button {
         display: none;
         width: 130px;
@@ -597,9 +539,8 @@
         display: flex;
         gap: 0rem;
         position: absolute;
-        top: 65px;
-        left: -250px;
-        right: 0;
+        top: 70px;
+        left: -240px;
         width: 83vw;
         height: 50px;
         border-top-right-radius: 5px;
@@ -643,7 +584,7 @@
         content: "";
         display: block;
         position: absolute;
-        left: 16rem;
+        left: 15.3rem;
         top: -9px;
         border-bottom: 10px solid var(--white);
         border-left: 10px solid transparent;
