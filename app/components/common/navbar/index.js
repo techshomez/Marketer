@@ -1,14 +1,16 @@
 "use client";
 import { useState } from "react";
 import "./navbar.scss";
-import { BsSearch } from "react-icons/bs";
+import { BsArrowRight, BsSearch } from "react-icons/bs";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [openMenus, setOpenMenu] = useState("navbar");
+  const [openSearch, setOpenSearch] = useState(false);
 
   const handleMenu = () => {
     setOpenMenu("open__menu");
+    setOpenSearch(false);
   };
   const closeMenu = () => {
     setOpenMenu("navbar");
@@ -31,11 +33,19 @@ const Navbar = () => {
         <a href="#">Contact</a>
       </nav>
       <div className="nav__right">
-        <a href="">
+        <a onClick={() => setOpenSearch(!openSearch)}>
           <i>
             <BsSearch />
           </i>
         </a>
+        {openSearch && (
+          <div className="search__options">
+            <input type="" name="" placeholder="Search..." />
+            <button>
+              <BsArrowRight />
+            </button>
+          </div>
+        )}
         <button>Get Started</button>
       </div>
       <div className="hambuger">

@@ -1,10 +1,11 @@
+"use client";
 import "./banner.scss";
 import { BsFillPlayFill } from "react-icons/bs";
 import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <section className="banner">
       <div className="left">
         <div className="top__title">
           <span className="line"></span>
@@ -35,7 +36,7 @@ const Banner = () => {
           height="100"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
