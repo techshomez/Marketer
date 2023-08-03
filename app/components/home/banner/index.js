@@ -1,7 +1,8 @@
 "use client";
 import "./banner.scss";
-import { BsFillPlayFill } from "react-icons/bs";
+import "./responsive.scss";
 import Image from "next/image";
+import { BsFillPlayFill } from "react-icons/bs";
 
 const Banner = () => {
   return (
